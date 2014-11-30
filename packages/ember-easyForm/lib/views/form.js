@@ -4,6 +4,7 @@ Ember.EasyForm.Form = Ember.EasyForm.BaseView.extend({
   classNameBindings: ['wrapperConfig.formClass'],
   novalidate: 'novalidate',
   wrapper: 'default',
+  isSubmitting: false,
   init: function() {
     this._super();
     this.action = this.action || 'submit';
